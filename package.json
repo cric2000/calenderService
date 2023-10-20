@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "mkdirp dist && cp -r * dist"
+    "build": "mkdirp dist && rsync -av --exclude=public/ . dist/"
   },
   "dependencies": {
     "date-fns": "^2.30.0",
