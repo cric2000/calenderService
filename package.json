@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "mkdirp dist && cp -r * dist"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "date-fns-tz": "^2.0.0"
+  },
+  "devDependencies": {
+    "mkdirp": "^3.0.1"
+  }
+}
