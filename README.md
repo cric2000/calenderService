@@ -11,7 +11,7 @@ To get started, follow these steps:
 First, clone this repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/cric2000/calendarService.git
+git clone https://github.com/cric2000/calenderService
 ```
 ### Install Dependencies and Start the Server
 
