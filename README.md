@@ -6,8 +6,6 @@ This is a simple calendar service repository to play with dates
 
 Here is a link to the working project: [Live Demo](https://calender-service.vercel.app/)
 
-To get started, follow these steps:
-
 ## Getting Started
 
 ### Clone the Repository
