@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <title>Calendry</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #111; 
+            color: #fff; 
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .logo img {
+            max-height: 35px; 
+            margin-right: 10px; 
+        }
+
+        .nav {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 25px; 
+            font-weight: bold;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        }
+
+        .text {
+            font-size: 30px;
+            margin: 20px auto;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 20px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        ul {
+            margin-bottom: 20px;
+        }
+
+        code {
+            background-color: #eeeeee;
+            color: #000000;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+            width: 10px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        ul li {
+    margin-bottom: 10px;
+}
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jpg" alt="Calendry Logo">
+        </div>
+        <h1 class="nav">Calendry</h1>
+    </nav>
+    <p class="text">API <strong>documentation</strong> for calendar service.</p>
+    <div class="container">   
+<ul>
+    <li>
+        <h2>/add Endpoint</h2>
+        <p>Use the /add endpoint to calculate a new date by adding a specified number of days or weeks to the current date. If no date is provided, the operation will be performed on the current date.</p>
+
+        <h3>Parameters:</h3>
+        <ul>
+            <li><strong>type</strong>: Specify whether to add "days" or "weeks".</li>
+            <li><strong>value</strong>: The number of days or weeks to add.</li>
+            <li><strong>date (optional)</strong>: If provided, the calculation will be based on this date; otherwise, it defaults to the current date.</li>
+        </ul>
+    </li>
+<li>
+        <h2>/sub Endpoint</h2>
+        <p>Use the /sub endpoint to calculate a new date by subtracting a specified number of days or weeks from a given date. If no date is provided, the operation will be performed on the current date.</p>
+
+        <h3>Parameters:</h3>
+        <ul>
+            <li><strong>type</strong>: Specify whether to subtract "days" or "weeks".</li>
+            <li><strong>value</strong>: The number of days or weeks to subtract.</li>
+            <li><strong>date (optional)</strong>: The base date from which subtraction occurs; defaults to the current date if not provided.</li>
+        </ul>
+    </li>
+    <li>
+        <h2>Examples</h2>
+        <p>Here are some example requests:</p>
+        <ul>
+            <li>To add 1 week to the current date: <code>/add?type=weeks&value=1</code></li>
+            <li>To subtract 5 days from a specific date: <code>/sub?type=days&value=5&date=11-Feb-2023</code></li>
+        </ul>
+    </li>
+    </ul>
+    </div>
+</body>
+
+</html>
